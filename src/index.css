@@ -7,7 +7,49 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(43, 0, 78, 0.98), rgba(0, 0, 0, 0.96));
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+input[type=range][invert=inverted]
+{
+  transform: rotateY(180deg);
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    transform: rotate(270deg);
+    width: 250px;
+    height: 250px;
+    margin-right: -125px;
+}
+input[type=range][vertiOri=vertized]
+{
+  writing-mode: bt-lr; /* IE */
+  width: 250px;
+  height: 20px;
+  transform: rotate(90deg);
+  margin-left: -125px;
+}
+
+input{
+  width: 100%;
 }
